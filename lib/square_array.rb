@@ -1,11 +1,5 @@
 def square_array(array)
-  # your code here
-  
-  count=0 
-  while array[count]  do 
-    squareArray=[]
-    squareArray << squareArray.push(array[count]**2)
-    count+=1 
-  end
-    
+  new_array = []
+  array.each{|a| new_array.push(a*a)}
+  return new_array
 end
